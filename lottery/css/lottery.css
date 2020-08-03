@@ -1,0 +1,19 @@
+.hidden{
+    display: none;
+}
+.main>h1{
+    text-align: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center
+}
+
+.main{
+    position: static;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid gray;
+}
