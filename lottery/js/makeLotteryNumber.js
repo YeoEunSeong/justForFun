@@ -50,7 +50,7 @@ function selectNumber(){
 
 function loadNumber(){
     numberArray.forEach(element => {
-        const LI_NUMBER = document.createElement("li");
+        const LI_NUMBER = document.createElement("span");
         const NUM = document.createTextNode(element);
         LI_NUMBER.appendChild(NUM);
         NUMBER_LIST.appendChild(LI_NUMBER);
