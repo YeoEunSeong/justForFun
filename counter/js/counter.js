@@ -1,6 +1,4 @@
 const COUNT = document.getElementById('number');
-const ADD = document.querySelector('.add');
-const MINUS = document.querySelector('.minus');
 
 function add(){
     COUNT.innerText = Number(COUNT.innerText)+1;
@@ -9,11 +7,19 @@ function add(){
 function minus(){
     COUNT.innerText = Number(COUNT.innerText)-1;
 }
-
+function reset(){
+    COUNT.innerText = 0;
+}
 
 function init(){
+    const ADD = document.querySelector('.add');
+    const MINUS = document.querySelector('.minus');
+    const RESET = document.querySelector('.reset');
+
     ADD.addEventListener('click', add);
     MINUS.addEventListener('click', minus);
+    RESET.addEventListener('click', reset);
+
 }
 
 init();
