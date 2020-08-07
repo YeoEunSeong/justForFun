@@ -19,7 +19,7 @@ function saveToDo(){
 function clearLocalStorage() {
     LOCAL_STORAGE.clear();
     index = 0;
-    loadToDo();
+    location.reload();
 }
 
 function loadToDo() {
@@ -46,7 +46,7 @@ function toggleHidden(){
 }
 
 function init(){
-    loadToDo()
+    loadToDo();
     SUBMIT_CLICK.addEventListener('click', saveToDo);
     CLEAR_CLICK.addEventListener('click', clearLocalStorage);    
 }
