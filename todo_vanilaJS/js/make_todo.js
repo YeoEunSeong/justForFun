@@ -19,11 +19,13 @@ function saveToDo(){
 function clearLocalStorage() {
     LOCAL_STORAGE.clear();
     index = 0;
-    location.reload();
+    loadToDo();
 }
 
 function loadToDo() {
- 
+    while(TODO.hasChildNodes())
+        TODO.removeChild(TODO.firstChild);
+
     for(let i =0; i<LOCAL_STORAGE.length; i++){
         const NEW_TODO = document.createElement("li");
         const TODO_TEXT = document.createTextNode(i+1 +" "+ LOCAL_STORAGE[i]);
