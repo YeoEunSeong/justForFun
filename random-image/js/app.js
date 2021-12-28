@@ -1,5 +1,5 @@
 const catGenerator = (() => {
-  const LAST_NUMBER = 10;
+  const LAST_NUMBER = 16;
   const $image = document.querySelector('.cat-image');
 
   let prevImage = 0;
