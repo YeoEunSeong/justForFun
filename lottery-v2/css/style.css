@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.lottery-numbers {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lottery-number {
+  margin-right: 20px;
+}
+
+.lottery-number:last-child {
+  margin-right: 0;
+}
