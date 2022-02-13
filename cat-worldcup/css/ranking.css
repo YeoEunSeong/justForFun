@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.ranking li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+.ranking span {
+  font-size: 24px;
+  vertical-align: super;
+  margin-right: 16px;
+}
+
+.ranking li {
+  width: 100%;
+}
+
+.ranking li img {
+  width: 300px;
+}
+
+a {
+  display: inline-block;
+
+  color: #fff;
+  background-color: blueviolet;
+  text-decoration: none;
+  border: 0;
+  padding: 12px;
+  border-radius: 8px;
+}
