@@ -1,13 +1,19 @@
 const rockScissorsPaper = ['✊', '✌️', '🖐'];
 const $computer = document.querySelector('.computer');
 const $buttonGroup = document.querySelector('.button-group');
+const $result = document.querySelector('.replay-modal-result');
+const $replayButton = document.querySelector('.replay');
+
 let currentComputer = null;
 let canPlay = true;
+let timerId = null;
 
-const timerId = setInterval(() => {
-  currentComputer = Math.floor(Math.random() * 3);
-  $computer.textContent = rockScissorsPaper[currentComputer];
-}, 50);
+const setTimer = () => {
+  timerId = setInterval(() => {
+    currentComputer = Math.floor(Math.random() * 3);
+    $computer.textContent = rockScissorsPaper[currentComputer];
+  }, 50);
+};
 
 const computeResult = userSelected => {
   if (currentComputer === userSelected) return 'Draw';
@@ -24,5 +30,15 @@ $buttonGroup.onclick = ({ target }) => {
   canPlay = false;
   clearInterval(timerId);
   const userSelected = target.matches('.rock') ? 0 : target.matches('.scissors') ? 1 : 2;
-  alert(computeResult(userSelected));
+  $result.textContent = computeResult(userSelected);
+};
+
+$replayButton.onclick = () => {
+  setTimer();
+  canPlay = true;
+  $result.textContent = '';
+};
+
+window.onload = () => {
+  setTimer();
 };
