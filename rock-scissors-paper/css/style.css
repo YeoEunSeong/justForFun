@@ -1,0 +1,43 @@
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 500px;
+  height: 400px;
+
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.computer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+}
+
+.button-group {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+.rock,
+.scissors,
+.paper {
+  margin-right: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 36px;
+}
+
+.paper {
+  margin-right: 0;
+}
