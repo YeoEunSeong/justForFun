@@ -36,3 +36,12 @@
    - 랜덤 고양이 이미지를 만들다가 재미있어 보여서...
    - 16가지 이미지를 임의의 순서로 보여주면서 사용자가 선택한 고양이만 다음 라운드에 진출하는 방식
    - 최종 우승할 때까지 진행
+
+7. 2048
+
+   - (버그와 함께하는)2048 게임
+   - need to add winning condition, any one of the cells is 2048
+   - need to make modal which show win or lose statement when game is over.
+   - need to add css
+   - css: different background color of each cell by its value
+   - css: animation, when number changes
